@@ -1,50 +1,40 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="Syed Bhai Biryani | Best Authentic Biryani">
+  
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-cover bg-center" 
+           style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url('/hero.jpg')">
+    <div class="text-center text-white px-6">
+      <h1 class="text-6xl md:text-7xl font-bold mb-4">Syed Bhai Biryani</h1>
+      <p class="text-2xl md:text-3xl mb-8">Traditional • Fresh • Delicious</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#menu" class="px-8 py-4 bg-[#c2410f] hover:bg-[#9f2f0a] text-white rounded-full text-lg font-semibold transition">
+          View Menu
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" 
+           class="px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full text-lg font-semibold flex items-center justify-center gap-2 transition">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-6">Our Story</h2>
+    <p class="text-xl text-gray-700">At Syed Bhai Biryani, we serve authentic biryani made with generations of traditional recipes and the finest ingredients.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="bg-[#fffaf0] py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Signature Menu</h2>
+      <!-- Menu items will be added here -->
+    </div>
+  </section>
+
+</Layout>
