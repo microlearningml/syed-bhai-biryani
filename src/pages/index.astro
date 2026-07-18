@@ -3,38 +3,26 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Syed Bhai Biryani | Best Authentic Biryani">
-  
-  <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center bg-cover bg-center" 
-           style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url('/hero.jpg')">
-    <div class="text-center text-white px-6">
-      <h1 class="text-6xl md:text-7xl font-bold mb-4">Syed Bhai Biryani</h1>
-      <p class="text-2xl md:text-3xl mb-8">Traditional • Fresh • Delicious</p>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="min-h-screen flex items-center justify-center bg-cover bg-center relative" 
+           style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.55)), url('/hero.jpg')">
+    <div class="text-center text-white px-6 max-w-5xl">
+      <h1 class="text-6xl md:text-7xl font-bold mb-4 tracking-tight">Syed Bhai Biryani</h1>
+      <p class="text-2xl md:text-3xl mb-8">Authentic • Fresh • Unforgettable</p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#menu" class="px-8 py-4 bg-[#c2410f] hover:bg-[#9f2f0a] text-white rounded-full text-lg font-semibold transition">
+        <a href="#menu" class="px-10 py-4 bg-[#c2410f] hover:bg-[#9f2f0a] text-white rounded-full text-lg font-semibold transition">
           View Menu
         </a>
-        <a href="https://wa.me/919876543210" target="_blank" 
-           class="px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full text-lg font-semibold flex items-center justify-center gap-2 transition">
+        <a href="https://wa.me/919XXXXXXXXX" target="_blank" 
+           class="px-10 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full text-lg font-semibold flex items-center justify-center gap-2 transition">
           Order on WhatsApp
         </a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ==================== ABOUT ==================== -->
   <section class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <h2 class="text-4xl font-bold mb-6">Our Story</h2>
-    <p class="text-xl text-gray-700">At Syed Bhai Biryani, we serve authentic biryani made with generations of traditional recipes and the finest ingredients.</p>
-  </section>
-
-  <!-- Menu Section -->
-  <section id="menu" class="bg-[#fffaf0] py-16">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Our Signature Menu</h2>
-      <!-- Menu items will be added here -->
-    </div>
-  </section>
-
-</Layout>
+    <h2 class="text-4xl font-bold mb-6">
